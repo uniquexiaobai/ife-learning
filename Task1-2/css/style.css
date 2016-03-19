@@ -1,0 +1,70 @@
+body {
+	background: #DEDEDE;
+	font-size: 14px;
+	color: #000;
+}
+
+/* 头部 */
+header {
+	width: 100%;
+	overflow: hidden;
+	background: #333333;
+	padding-top: 5px;
+}
+h1 {
+	float: left;
+	margin-left: 40px;
+}
+nav {
+	float: right;
+	margin-right: 40px;
+	margin-top: 13px;
+}
+.nav-item {
+	display: inline-block;
+	margin-left: 15px;
+}
+.nav-item a {
+	font-size: 13px;
+	color: #FFE0EB;
+}
+
+/* 文章模块 */
+article {
+	background: #fff;
+	margin: 20px 20px;
+	padding: 30px 20px;
+}
+article h3{
+	color: #646462;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+div.meta {
+	color: #646462;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+article P {
+	text-indent: 28px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+p:nth-of-type(2) {
+	text-indent: 0;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+article li {
+	line-height: 25px;
+}
+
+/* 图片列表 */
+.img-list {
+	background: #fff;
+	margin: 20px 20px;
+	padding: 30px 20px;
+}
+.img-list figure {
+	border: 1px solid red;
+}
