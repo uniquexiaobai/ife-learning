@@ -96,14 +96,14 @@ tbody .line:last-child td{
 	text-align: center;
 	margin-left: 40px;
 	margin-top: 20px;
-	padding: 15px;
+	padding: 10px;
 	border: 1px solid #CECECE;
 }
 .img-list figcaption {	
 	color: #000;
 	font-weight: 600;
 	font-size: 13.5px;
-	margin-bottom: 15px;
+	margin-bottom: 7px;
 }
 
 /* 侧栏 */
@@ -134,16 +134,16 @@ form {
 	margin-left: 0;
 }
 .form-group select, textarea, input[type="radio"], input[type="checkbox"] {
-	margin-left: -4px;
 	vertical-align: middle;
 }
 
 .form-group textarea {
-	width: 328px;
+	width: 324px;
 }
 .form-group span {
 	display: inline-block;
-	margin-left: 165px;
+	margin-left: 169px;
+	margin-bottom: 13px;
 }
 .submit input {
 	background: blue;
