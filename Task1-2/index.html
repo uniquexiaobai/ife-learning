@@ -70,18 +70,22 @@
 	<section>
 		<div class="img-list">
 			<h2>图片</h2>
-			<figure>
-				<figcaption>好看的图片</figcaption>
-				<img src="./img/apple.jpg" alt="apple">
-			</figure>
-			<figure>
-				<figcaption>好看的图片</figcaption>
-				<img src="./img/apple.jpg" alt="apple">
-			</figure>
-			<figure>
-				<figcaption>好看的图片</figcaption>
-				<img src="./img/apple.jpg" alt="apple">
-			</figure>
+			<div>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="./img/apple.jpg" alt="apple">
+				</figure>
+			</div><div>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="./img/apple.jpg" alt="apple">
+				</figure>
+			</div><div>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="./img/apple.jpg" alt="apple">
+				</figure>
+			</div>
 		</div>
 	</section>
 
@@ -100,31 +104,30 @@
 			<li>排名三</li>
 		</ol>
 		<table border="1">
-			<caption>这是一个表格</caption>
 			<thead>
-				<tr>
+				<tr class="line">
 					<th>表头</th>
 					<th>表头</th>
 					<th>表头</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="line">
 					<td>表内容单元格</td>
 					<td>表内容单元格</td>
 					<td><a href="#">操作</a></td>
 				</tr>
-				<tr>
+				<tr class="line">
 					<td>表内容单元格</td>
 					<td>表内容单元格</td>
 					<td><a href="#">操作</a></td>
 				</tr>
-				<tr>
+				<tr class="line">
 					<td>表内容单元格</td>
 					<td>表内容单元格</td>
 					<td><a href="#">操作</a></td>
 				</tr>
-				<tr>
+				<tr class="line">
 					<td>总计</td>
 					<td colspan="2">1000</td>
 				</tr>
@@ -133,41 +136,42 @@
 	</article>
 
 	<aside>
-		<hgroup>
-			<h2>这里是一个侧栏，这是侧栏的标题</h2>
-			<h3>侧栏注册窗口标题</h3>
-		</hgroup>
+		<h3>这里是一个侧栏，这是侧栏的标题</h3>
 		<form action="">
-			<div>
-				<label>请输入邮箱地址：<input type="text" name="email" placeholder="这是一个文本输入框" /></label><br>
-				邮箱地址请按要求输入
-			</div><br>
-			<div>
-				<label>请输入密码：<input type="text" name="email" placeholder="这是一个文本输入框"/></label>
-				<label>请重复输入密码：<input type="text" name="email" placeholder="这是一个文本输入框"/></label><br>
-				密码请为6-16位英文数字
+			<div class="form-group">
+				<label for="email">请输入邮箱地址</label><input type="text" id="email" name="email" placeholder="这是一个文本输入框" />
+				<span>邮箱地址请按要求输入</span>
 			</div>
-			<div>
-				<span>性别:</span>
-				<label><input type="radio" checked value="man" name="sex">男</label>
-				<label><input type="radio" value="woman" name="sex">女</label>&nbsp;
-				<label>
-					城市:
-					<select name="city">
+			<div class="form-group">
+				<label for="password">请输入密码</label><input type="text" name="password" id="password" placeholder="*********"/><br>
+				<label for="passwordRepeat">请重复输入密码</label><input type="text" name="passwordRepeat" id="passwordRepeat" placeholder="*********"/>
+				<span>密码请为6-16位英文数字</span>
+			</div><br>
+			<div class="form-group">
+				<label>性别</label>
+				<input type="radio" checked name="sex" value="man">男&nbsp;&nbsp;
+				<input type="radio" name="sex" value="woman">女
+			</div>
+			<div class="form-group">
+				<label>城市</label>
+				<select name="city">
 						<option value="beijing" selected>北京</option>
 						<option value="shanghai">上海</option>
 						<option value="guangzhou">广州</option>
 					</select>
-				</label>&nbsp;
-				<span>爱好:</span>
-				<label><input type="checkbox" name="sport">运动</label>
-				<label><input type="checkbox" name="art">艺术</label>
-				<label><input type="checkbox" name="science">科学</label>&nbsp;
-				<label>
-					个人描述：
-					<textarea cols="20" rows="3">这里是一个输入框，输入个人描述</textarea>
-				</label>&nbsp;
-				<input type="submit" value="确认提交">
+			</div>
+			<div class="form-group">
+				<label>爱好</label>
+				<input type="checkbox" name="sport">运动&nbsp;&nbsp;
+				<input type="checkbox" name="art">艺术&nbsp;&nbsp;
+				<input type="checkbox" name="science">科学
+			</div>
+			<div class="form-group">
+				<label>个人描述</label>
+				<textarea cols="3" rows="6 placeholder="这里是一个输入框，输入个人描述"></textarea>
+			</div>
+			<div class="submit">
+				<input type="submit" value="确认提交" />
 			</div>
 		</form>
 	</aside>

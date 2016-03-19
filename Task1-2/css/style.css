@@ -2,6 +2,7 @@ body {
 	background: #DEDEDE;
 	font-size: 14px;
 	color: #000;
+	font-family: "Microsoft Yahei";
 }
 
 /* 头部 */
@@ -26,7 +27,7 @@ nav {
 }
 .nav-item a {
 	font-size: 13px;
-	color: #FFE0EB;
+	color: #FFf;
 }
 
 /* 文章模块 */
@@ -55,9 +56,34 @@ p:nth-of-type(2) {
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
+article ol {
+	margin: 20px 50px;
+}
 article li {
 	line-height: 25px;
 }
+article table {
+	border: 1px solid #CCCCCC;
+	width: 100%;
+}
+/* 表格 */
+table.line {
+
+}
+thead .line {
+	background: #000;
+	color: #fff;
+}
+tbody .line:last-child td{
+	background: #ccc;
+	font-weight: bold;
+}
+.line td, th{
+	border: 1px solid #ccc;
+	font-size: 13px;
+	padding: 3px 4px;
+}
+
 
 /* 图片列表 */
 .img-list {
@@ -66,5 +92,76 @@ article li {
 	padding: 30px 20px;
 }
 .img-list figure {
-	border: 1px solid red;
+	display: inline-block;
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 20px;
+	padding: 15px;
+	border: 1px solid #CECECE;
+}
+.img-list figcaption {	
+	color: #000;
+	font-weight: 600;
+	font-size: 13.5px;
+	margin-bottom: 15px;
+}
+
+/* 侧栏 */
+aside {
+	background: #fff;
+	margin: 20px 20px;
+	padding: 30px 20px;
+}
+aside h3 {
+	padding: 8px 12px;
+	border-left: 3px solid #CACACA;
+}
+form {
+	width: 500px;
+	margin: 10px auto;
+}
+.form-group{
+}
+.form-group label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	height: 35px;
+	margin-right: 15px;
+	vertical-align:top;
+}
+.form-group input {
+	margin-left: 0;
+}
+.form-group select, textarea, input[type="radio"], input[type="checkbox"] {
+	margin-left: -4px;
+	vertical-align: middle;
+}
+
+.form-group textarea {
+	width: 328px;
+}
+.form-group span {
+	display: inline-block;
+	margin-left: 165px;
+}
+.submit input {
+	background: blue;
+	width: 100%;
+	padding: 7px 0;
+	border-radius: 7px;
+	margin-top: 10px;
+}
+
+/* footer模块 */
+footer {
+	width: 100%;
+	height: 50px;
+	background: #000;
+	padding-top: 25px;
+}
+footer p {
+	width: 100px;
+	margin: 0 auto;
+	color: #fff;
 }
