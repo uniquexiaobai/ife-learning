@@ -19,7 +19,7 @@ function getData() {
 function sortAqiData(data) {
 
 	// 冒泡排序
-	for(var i=0; i<data.length; i++) {
+	for(var i=0; i<data.length-1; i++) {
 
 		for(var j=0; j<data.length-1-i; j++) {
 
