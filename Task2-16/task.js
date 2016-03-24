@@ -35,29 +35,22 @@ function renderAqiList() {
 	var str = "<tr> <td>城市</td> <td>空气质量</td> <td>操作</td> </tr>";
 	
 	for(var city in aqiData) {
-		str += "<tr><td>" + city + "</td><td>" + aqiData[city] + "</td><td>" + "<button class='del'>删除</button>" + "</td></tr>"; 
+		str += "<tr><td>" + city + "</td><td>" + aqiData[city] + "</td><td>" + "<button class='del' data-city='" + city + "'>删除</button>" + "</td></tr>"; 
 	}
 
 	table.innerHTML = str;
 
-	// 点击删除按钮的处理逻辑
-	var delBtns = document.getElementsByClassName('del');
-	var keys = Object.keys(aqiData);
-
-	for(var i=0; i<keys.length; i++) {
-
-		(function(i) {
-
-			delBtns[i].onclick = function() {
-
-				delete aqiData[keys[i]];
-				renderAqiList();
-				
-			}
-
-		})(i);
-		
-	}
+	// 另一种方法实现删除事件
+	// var delBtns = document.getElementsByClassName('del');
+	// var keys = Object.keys(aqiData);
+	// for(var i=0; i<keys.length; i++) {
+	// 	(function(i) {
+	// 		delBtns[i].onclick = function() {
+	// 			delete aqiData[keys[i]];
+	// 			renderAqiList();
+	// 		}
+	// 	})(i);
+	// }
 
 }
 
@@ -67,9 +60,20 @@ function addBtnHandle() {
 	renderAqiList();
 }
 
+function delBtnHandle(city) {
+	delete aqiData[city];
+	renderAqiList();
+}
+
 //添加点击事件 
 function init() {
 	addBtn.onclick = addBtnHandle;
+	
+	table.onclick = function(e) {
+		if(e.target.tagName === 'BUTTON') {
+			delBtnHandle.call(e.target, e.target.dataset.city);
+		}
+	}
 }
 
 init();
