@@ -1,0 +1,124 @@
+body {
+  width: 1280px;
+  margin: 0 auto;
+  border: 1px solid red;
+  font-family: "Microsoft YaHei";
+}
+
+// 头部样式
+header {
+  height: 52px;
+  margin-left: 60px;
+  .logo {
+    font-size: 21px;
+    color: #3A3A3A;
+    img {
+      margin-top: 10px;
+      float: left;
+    }
+    span {
+      float: left;
+      margin-top: 12px;
+      margin-left: 10px;
+    }
+  }
+  nav {
+    float: right;
+    width: 40%;
+    margin-right: 70px;
+    ul {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 58px;
+        margin: 0 3px;
+        font-size: 14px;
+        color: #797B83;
+        height: 50px;
+        &:hover {
+          color: #E7504D;
+          border-bottom: 2px solid #E7504D;
+        }
+      }
+      li:last-child > a > img {
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+// 尾部样式
+footer {
+  color: #fff;
+  font-size: 13px;
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    background: #33363F;
+    h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-top: 5px;
+    }
+    form {
+      width: 510px;
+      height: 40px;
+      margin-top: 30px;
+      display: flex;
+      input {
+        padding-left: 7px;
+        flex: 8.4;
+        font-size: 15px;
+      }
+      button {
+        flex: 1.6;
+        background: #717179;
+        border: 1px solid #717179;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 5px;
+      }
+    }
+    .share {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+  address {
+    font-style: normal;
+    height: 60px;
+    background: #30303A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span:first-child {
+      margin-left: 100px;
+    }
+    span:last-child {
+      margin-right: 40px;
+    }
+  }
+}
