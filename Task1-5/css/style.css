@@ -1,0 +1,179 @@
+body {
+	background: #DEDEDE;
+	font-size: 14px;
+	color: #000;
+	font-family: "Microsoft Yahei";
+}
+
+/* 头部 */
+header {
+	width: 100%;
+	overflow: hidden;
+	background: #333333;
+	padding-top: 5px;
+	min-width: 800px;
+}
+h1 {
+	float: left;
+	margin-left: 40px;
+}
+nav {
+	float: right;
+	margin-right: 40px;
+	margin-top: 13px;
+}
+.nav-item {
+	display: inline-block;
+	margin-left: 15px;
+}
+.nav-item a {
+	font-size: 13px;
+	color: #FFf;
+}
+
+
+/* 主题部分 */
+.main {
+	display: flex;
+}
+.content {
+	min-width: 400px;
+}
+/* 文章模块 */
+article {
+	background: #fff;
+	margin: 20px 20px;
+	padding: 30px 20px;
+}
+article h3{
+	color: #646462;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+div.meta {
+	color: #646462;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+article P {
+	text-indent: 28px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+p:nth-of-type(2) {
+	text-indent: 0;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+article ol {
+	margin: 20px 50px;
+}
+article li {
+	line-height: 25px;
+}
+article table {
+	border: 1px solid #CCCCCC;
+	width: 100%;
+}
+/* 表格 */
+table.line {
+
+}
+thead .line {
+	background: #000;
+	color: #fff;
+}
+tbody .line:last-child td{
+	background: #ccc;
+	font-weight: bold;
+}
+.line td, th{
+	border: 1px solid #ccc;
+	font-size: 13px;
+	padding: 3px 4px;
+}
+
+
+/* 图片列表 */
+.img-list {
+	background: #fff;
+	margin: 20px 20px;
+	padding: 30px 20px;
+}
+.img-list figure {
+	display: inline-block;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #CECECE;
+}
+.img-list figcaption {	
+	color: #000;
+	font-weight: 600;
+	font-size: 13.5px;
+	margin-bottom: 7px;
+}
+
+/* 侧栏 */
+aside {
+	width: 372px;
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px 20px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+aside h3 {
+	padding: 8px 12px;
+	border-left: 3px solid #CACACA;
+}
+form {
+	margin: 10px auto;
+}
+.form-group{
+}
+.form-group label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	height: 35px;
+	margin-right: 15px;
+	vertical-align:top;
+}
+.form-group input {
+	margin-left: 0;
+}
+.form-group select, textarea, input[type="radio"], input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+.form-group textarea {
+	width: 200px;
+}
+.form-group span {
+	display: inline-block;
+	margin-left: 120px;
+	margin-bottom: 13px;
+}
+.submit input {
+	background: blue;
+	width: 330px;
+	padding: 7px 0;
+	border-radius: 7px;
+	margin-top: 10px;
+}
+
+/* footer模块 */
+footer {
+	width: 100%;
+	height: 50px;
+	background: #000;
+	padding-top: 25px;
+}
+footer p {
+	width: 100px;
+	margin: 0 auto;
+	color: #fff;
+}
