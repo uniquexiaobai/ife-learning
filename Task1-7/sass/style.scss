@@ -243,6 +243,128 @@ header {
   }
 }
 
+// 相册栏目
+.album {
+  background: #F8F8F8;
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  figure {
+    margin-right: 35px;
+    span {
+      border: 1px solid #DADADA;
+      background: #fff;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h5 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 21px;
+        letter-spacing: 33px;
+        padding-left: 20px;
+      }
+      p {
+        font-size: 13px;
+        color: #8D8D8D;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+// 新世界栏目
+.newWorld {
+  height: 566px;
+  display: flex;
+  .left {
+    width: 850px;
+    background: url(../img/main/newWorld.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h4 {
+      font-size: 44px;
+      font-weight: 400;
+    }
+    h3 {
+      margin-top: -35px;
+      font-size: 145px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      em {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 5px;
+        margin-right: 7px;
+      }
+      span {
+        color: #EA4F4D;
+      }
+    }
+    p {
+      color: #A8A8A8;
+      font-size: 13px;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      border: 1px solid #DF5964;
+      color: #DF5964;
+      font-size: 13px;
+      padding: 7px 25px;
+      &:hover {
+        color: #fff;
+        background: #DF5964;
+        cursor: default;
+      }
+    }
+    .bubble {
+      margin-top: 20px;
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #818181;
+        margin-left: 10px;
+      }
+      span:first-child {
+        background: #818181;
+      }
+    }
+  }
+
+
+
+}
+
 // 新时代栏目
 .newAge {
   height: 520px;
@@ -318,45 +440,46 @@ header {
   }
 }
 
-// 相册栏目
-.album {
-  background: #F8F8F8;
-  padding: 90px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  figure {
-    margin-right: 35px;
-    span {
-      border: 1px solid #DADADA;
-      background: #fff;
-      display: inline-block;
-      padding: 10px;
-      margin: 10px 0;
+.volunteer {
+  border: 1px solid blue;
+  font-size: 0;
+  .top {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
     }
-    figcaption {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h5 {
-        font-size: 15px;
-        font-weight: 500;
-      }
-      h4 {
-        font-weight: 500;
-        font-size: 21px;
-        letter-spacing: 33px;
-        padding-left: 20px;
-      }
-      p {
-        font-size: 13px;
-        color: #8D8D8D;
-        margin-top: 8px;
-      }
+    .line {
+      width: 33px;
+      height: 2px;
+      background: #E44F4B;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #9E9E9E;
+      font-size: 13px;
+      margin-top: 3px;
     }
   }
+  .left {
+    height: 450px;
+    width: 50%;
+    display: inline-block;
+    background: #ccc;
+  }
+  .right {
+    display: inline-block;
+    width: 50%;
+    height: 450px;
+    background: #ccc;
+  }
 }
-
 
 
 
