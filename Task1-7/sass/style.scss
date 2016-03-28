@@ -294,6 +294,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
+    position: relative;
     h4 {
       font-size: 44px;
       font-weight: 400;
@@ -306,6 +307,17 @@ header {
     p {
       font-size: 22px;
       margin-bottom: 10px;
+    }
+    .triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 30px solid #fff;
+      border-left: 17px solid transparent;
+      border-right: 17px solid transparent;
+      transform: rotate(90deg);
+      top: 50%;
+      right: -2px;
     }
   }
   .right {
@@ -441,8 +453,6 @@ header {
 }
 
 .volunteer {
-  border: 1px solid blue;
-  font-size: 0;
   .top {
     height: 300px;
     box-sizing: border-box;
@@ -468,16 +478,86 @@ header {
     }
   }
   .left {
-    height: 450px;
-    width: 50%;
-    display: inline-block;
-    background: #ccc;
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 150px;
+    margin-right: 70px;
+    article {
+      color: #918F90;
+      padding: 1px 10px;
+      clear: right;
+      overflow: hidden;
+      margin-bottom: 16px;
+      h5 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #5E5A5B;
+      }
+      p {
+        margin-top: 18px;
+        font-size: 12px;
+        line-height: 22px;
+      }
+      span {
+        float: right;
+        font-size: 12px;
+        em {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-bottom: 1px solid #918F90;
+          border-right: 1px solid #918F90;
+          transform: rotate(45deg);
+          margin-right: 10px;
+        }
+      }
+    }
+    article:last-child {
+      margin-bottom: 0;
+    }
   }
   .right {
-    display: inline-block;
-    width: 50%;
-    height: 450px;
-    background: #ccc;
+    float: left;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 140px;
+    box-sizing: border-box;
+    .group {
+      margin-bottom: 16px;
+      input {
+        width: 310px;
+        height: 40px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        background: #EDEDEF;
+        border: none;
+        margin-right: 14px;
+        color: #636162;
+        font-family: "Microsoft YaHei";
+      }
+      textarea {
+        width: 633px;
+        height: 120px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        color: #636162;
+        font-family: "Microsoft YaHei";
+        background: #EDEDEF;
+        border: none;
+      }
+      button {
+        height: 42px;
+        width: 639px;
+        background: #EDEDEF;
+        border: none;
+        color: #303032;
+        font-family: "Microsoft YaHei";
+        font-size: 13.5px;
+        margin-top: -5px;
+      }
+    }
   }
 }
 
@@ -489,6 +569,7 @@ header {
 
 // 尾部样式
 footer {
+  clear: both;
   color: #fff;
   font-size: 13px;
   .message {
