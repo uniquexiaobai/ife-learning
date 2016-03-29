@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task2-29</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 100px auto;
+      font-size: 30px;
+      font-family: "Microsoft Yahei";
+    }
+    #num {
+      font-size: 22px;
+      padding: 10px 15px;
+    }
+    #btn {
+      background: blue;
+      color: #fff;
+      font-family: "Microsoft Yahei";
+      font-size: 22px;
+      border: none;
+      padding: 10px 20px;
+    }
+    #warning {
+      font-size: 20px;
+      margin-left: 70px;
+      margin-top: 10px;
+      color: #A8A8A8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label for="num">名称</label>
+    <input type="text" id="num">
+    <button id="btn">验证</button><br>
+    <div id="warning">必填，长度为4~16个字符</div>
+  </div>
+
+  <script>
+    var num = document.getElementById("num");
+    var btn = document.getElementById("btn");
+    var warning = document.getElementById("warning");
+
+    btn.onclick = function() {
+      var value = num.value.trim().replace(/[\u4E00-\uFA29]/g, 'aa');
+      if(value === "") {
+        warning.innerHTML = "名称不能为空";
+        warning.style.color = "red";
+        num.style.border = "1px solid red";
+      }
+      else if(!/^.{4,16}$/g.test(value)) {
+        warning.innerHTML = "字符长度不对 “长度为4~16个字符”";
+        warning.style.color = "red";
+        num.style.border = "1px solid red";
+      }
+      else {
+        warning.innerHTML = "名称格式正确";
+        warning.style.color = "green";
+        num.style.border = "1px solid green";
+      }
+
+    }
+
+  </script>
+</body>
+</html>
