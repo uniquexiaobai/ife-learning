@@ -198,11 +198,9 @@ nav > a:nth-child(2) {
   margin: 10px 10px;
 }
 .article2 > .album {
-  /*display: flex;*/
   margin: 0 10px;
 }
 .article2 > .album > img {
-  border: 1px solid red;
   width: 31%;
 }
 .article2 > p {
