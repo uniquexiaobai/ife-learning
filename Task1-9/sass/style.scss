@@ -1,5 +1,4 @@
 body {
-  border: 1px solid red;
   width: 1280px;
   margin: 10px auto;
   font-family: "MicroSoft Yahei";
@@ -527,7 +526,174 @@ header {
         }
       }
     }
-
-
   }
+
+  // 右侧最后一栏
+  .bottom {
+    background: #eee;
+    // 日历
+    .calendar {
+      color: #000;
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #D1D2D7;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      .calendar-title {
+        font-size: 13px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #E7E8EC;
+        background: #F4F5F7;
+      }
+      .select {
+        margin: 10px 20px;
+        select {
+          font-size: 12px;
+          font-family: "MicroSoft Yahei";
+          margin-right: 5px;
+          border: 1px solid #CBCBCB;
+          &:focus {
+            outline: none;
+          }
+        }
+        select:nth-child(2) {
+          padding: 0 15px;
+        }
+        select:nth-child(3) {
+          padding: 0 5px;
+        }
+        span {
+          display: inline-block;
+          border: 1px solid #cbcbcb;
+          padding: 2px 10px;
+        }
+      }
+      .week {
+        margin: 0 20px;
+        display: flex;
+        margin-bottom: 10px;
+        span {
+          flex: 1;
+          padding: 7px 0;
+          border-top: 1px solid #A8CFEC;
+          border-bottom: 1px solid #E1E1E1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .calendar-main {
+        width: 320px;
+        margin: 0 20px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .colorRed {
+          color: #CA161F;
+        }
+        .day {
+          flex: 0 0 43px;
+          padding: 8px 0;
+          display: flex;
+          flex-direction: column;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    // 汽车
+    .car {
+      color: #000;
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #D1D2D7;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      .car-title {
+        font-size: 13px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #E7E8EC;
+        background: #F4F5F7;
+      }
+      .car-main {
+        padding: 15px 35px;
+        .tr {
+          display: flex;
+          align-items: center;
+          border-left: 1px solid #C8C9CB;
+          span {
+            padding: 5px 0;
+            border-right: 1px solid #C8C9CB;
+            border-bottom: 1px solid #C8C9CB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          span:first-child {
+            width: 70px;
+          }
+          span:nth-child(2) {
+            width: 90px;
+          }
+          span:nth-child(3) {
+            width: 300px;
+            .car-line {
+              margin-left: 15px;
+              width: 100px;
+              height: 3px;
+              background: #C8C9CB;
+              padding: 0;
+              border: none;
+              display: flex;
+              justify-content: flex-start;
+              em {
+                width: 60px;
+                height: 3px;
+                background: red;
+              }
+            }
+          }
+        }
+        .tr:first-child {
+          border-top: 1px solid #C8C9CB;
+          span:last-child {
+            .car-line {
+              background: #fff;
+              em {
+                background: #fff;
+              }
+            }
+          }
+        }
+        .tr:nth-child(3) {
+          span:last-child {
+            .car-line {
+              em {
+                background: blue;
+                width: 90%;
+              }
+            }
+          }
+        }
+        .tr:nth-child(5) {
+          span:last-child {
+            .car-line {
+              em {
+                background: green;
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
