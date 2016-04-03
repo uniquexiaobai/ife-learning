@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task2-30</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 10px auto;
+      font-size: 15px;
+      font-family: "Microsoft Yahei";
+    }
+    .group {
+      border: 1px solid red;
+      display: flex;
+      margin-top: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 70px;
+      margin-right: 20px;
+      text-align: right;
+    }
+    input {
+      flex: 8;
+      font-size: 15px;
+      padding: 4px 5px;
+    }
+    input:focus {
+      outline: none;
+      border: 1px solid #A9A9A9;
+    }
+    #btn {
+      background: blue;
+      color: #fff;
+      font-family: "Microsoft Yahei";
+      font-size: 15px;
+      border: none;
+      padding: 3px 8px;
+      margin-left: 255px;
+    }
+    #btn:hover {
+      background: red;
+    }
+    .warning {
+      height: 20px;
+      font-size: 15px;
+      color: #A9A9A9;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-left: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <label for="name">名称</label>
+    <input type="text" id="name">
+    <div class="warning" id="warn-name"></div>
+
+    <label for="password">密码</label>
+    <input type="text" id="password">
+    <div class="warning" id="warn-password"></div>
+
+    <label for="repeat-password">密码确认</label>
+    <input type="text" id="repeat-password">
+    <div class="warning" id="warn-repeat-password"></div>
+
+    <label for="email">邮箱</label>
+    <input type="text" id="email">
+    <div class="warning" id="warn-email"></div>
+
+    <label for="mobile">手机</label>
+    <input type="text" id="mobile">
+    <div class="warning" id="warn-mobile"></div>
+
+    <button id="btn">验证</button><br>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
