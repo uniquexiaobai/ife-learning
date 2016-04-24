@@ -1,0 +1,12 @@
+body {
+
+}
+.aqi-chart-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 500px;
+}
+span {
+  margin: 2px;
+}

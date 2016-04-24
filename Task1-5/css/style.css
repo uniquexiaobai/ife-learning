@@ -34,10 +34,13 @@ nav {
 
 /* 主题部分 */
 .main {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 .content {
 	min-width: 400px;
+	flex: 1 1 400px;
 }
 /* 文章模块 */
 article {
@@ -108,7 +111,7 @@ tbody .line:last-child td{
 	padding: 10px;
 	border: 1px solid #CECECE;
 }
-.img-list figcaption {	
+.img-list figcaption {
 	color: #000;
 	font-weight: 600;
 	font-size: 13.5px;
@@ -117,7 +120,8 @@ tbody .line:last-child td{
 
 /* 侧栏 */
 aside {
-	width: 372px;
+	/*width: 372px;*/
+	flex: 0 0 372px;
 	box-sizing: border-box;
 	background: #fff;
 	padding: 20px 20px;
