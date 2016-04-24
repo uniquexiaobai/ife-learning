@@ -1,0 +1,95 @@
+html, body, div, span, ul, li, input, button {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "MicroSoft Yahei";
+}
+
+/* row header */
+#row {
+  height: 30px;
+  margin-left: 30px;
+  display: flex;
+}
+#row > li {
+  width: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+}
+
+/* col header */
+#col {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+#col > li {
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* 方格 */
+#table {
+  border: 2px solid #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#box {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.top {
+  flex-direction: column;
+}
+.right {
+  flex-direction: row-reverse;
+}
+.bottom {
+  flex-direction: column-reverse;
+}
+.left {
+  flex-direction: row;
+}
+#box > span:first-child {
+  background: blue;
+  flex: 1;
+}
+#box > span:last-child {
+  background: red;
+  flex: 3;
+}
+
+#table > ul {
+  display: flex;
+}
+#table > ul > li {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ccc;
+}
+
+input {
+  margin: 10px 30px;
+}
