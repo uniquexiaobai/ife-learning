@@ -243,6 +243,140 @@ header {
   }
 }
 
+// 相册栏目
+.album {
+  background: #F8F8F8;
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  figure {
+    margin-right: 35px;
+    span {
+      border: 1px solid #DADADA;
+      background: #fff;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h5 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 21px;
+        letter-spacing: 33px;
+        padding-left: 20px;
+      }
+      p {
+        font-size: 13px;
+        color: #8D8D8D;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+// 新世界栏目
+.newWorld {
+  height: 566px;
+  display: flex;
+  .left {
+    width: 850px;
+    background: url(../img/main/newWorld.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    h4 {
+      font-size: 44px;
+      font-weight: 400;
+    }
+    h3 {
+      margin-top: -35px;
+      font-size: 145px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 30px solid #fff;
+      border-left: 17px solid transparent;
+      border-right: 17px solid transparent;
+      transform: rotate(90deg);
+      top: 50%;
+      right: -2px;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      em {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 5px;
+        margin-right: 7px;
+      }
+      span {
+        color: #EA4F4D;
+      }
+    }
+    p {
+      color: #A8A8A8;
+      font-size: 13px;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      border: 1px solid #DF5964;
+      color: #DF5964;
+      font-size: 13px;
+      padding: 7px 25px;
+      &:hover {
+        color: #fff;
+        background: #DF5964;
+        cursor: default;
+      }
+    }
+    .bubble {
+      margin-top: 20px;
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #818181;
+        margin-left: 10px;
+      }
+      span:first-child {
+        background: #818181;
+      }
+    }
+  }
+
+
+
+}
+
 // 新时代栏目
 .newAge {
   height: 520px;
@@ -318,40 +452,110 @@ header {
   }
 }
 
-// 相册栏目
-.album {
-  background: #F8F8F8;
-  padding: 90px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  figure {
-    margin-right: 35px;
-    span {
-      border: 1px solid #DADADA;
-      background: #fff;
-      display: inline-block;
-      padding: 10px;
-      margin: 10px 0;
+.volunteer {
+  .top {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
     }
-    figcaption {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .line {
+      width: 33px;
+      height: 2px;
+      background: #E44F4B;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #9E9E9E;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+  }
+  .left {
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 150px;
+    margin-right: 70px;
+    article {
+      color: #918F90;
+      padding: 1px 10px;
+      clear: right;
+      overflow: hidden;
+      margin-bottom: 16px;
       h5 {
         font-size: 15px;
-        font-weight: 500;
-      }
-      h4 {
-        font-weight: 500;
-        font-size: 21px;
-        letter-spacing: 33px;
-        padding-left: 20px;
+        font-weight: 600;
+        color: #5E5A5B;
       }
       p {
-        font-size: 13px;
-        color: #8D8D8D;
-        margin-top: 8px;
+        margin-top: 18px;
+        font-size: 12px;
+        line-height: 22px;
+      }
+      span {
+        float: right;
+        font-size: 12px;
+        em {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-bottom: 1px solid #918F90;
+          border-right: 1px solid #918F90;
+          transform: rotate(45deg);
+          margin-right: 10px;
+        }
+      }
+    }
+    article:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .right {
+    float: left;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 140px;
+    box-sizing: border-box;
+    .group {
+      margin-bottom: 16px;
+      input {
+        width: 310px;
+        height: 40px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        background: #EDEDEF;
+        border: none;
+        margin-right: 14px;
+        color: #636162;
+        font-family: "Microsoft YaHei";
+      }
+      textarea {
+        width: 633px;
+        height: 120px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        color: #636162;
+        font-family: "Microsoft YaHei";
+        background: #EDEDEF;
+        border: none;
+      }
+      button {
+        height: 42px;
+        width: 639px;
+        background: #EDEDEF;
+        border: none;
+        color: #303032;
+        font-family: "Microsoft YaHei";
+        font-size: 13.5px;
+        margin-top: -5px;
       }
     }
   }
@@ -363,9 +567,9 @@ header {
 
 
 
-
 // 尾部样式
 footer {
+  clear: both;
   color: #fff;
   font-size: 13px;
   .message {

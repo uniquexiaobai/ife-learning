@@ -1,0 +1,50 @@
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+div {
+  font-family: "MicroSoft Yahei";
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  color: #fff;
+}
+
+#root {
+  position: relative;
+  margin: 50px auto;
+}
+#root div {
+  position: absolute;
+  top: 100px;
+}
+#root > div:nth-child(1) {
+  right: 250px;
+}
+#root > div:nth-child(3) {
+  left: 250px;
+}
+
+#root > div > div:nth-child(1) {
+  right: 100px;
+}
+#root > div > div:nth-child(3) {
+  left: 100px;
+}
+
+#root > div > div > div:nth-child(1) {
+  right: 22px;
+}
+#root > div > div > div:nth-child(2) {
+  left: 22px;
+}
+#root > div > div:last-child > div {
+  left: 22px;
+}

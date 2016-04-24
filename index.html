@@ -2,26 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
   <title>ife-learning</title>
   <style>
-		div {
+  	html,body,div,p,a {
+  		margin: 0;
+  		padding: 0;
+  	}
+  	body {
+  		font-family: "MicroSoft Yahei";
+  		padding: 0 30px;
+  	}
+
+		.container {
       border: 2px solid blue;
       border-radius: 10px;
       width: 50%;
-      padding: 10px 30px;
-      margin-bottom: 20px;
+			padding: 0px 20px;
+			padding-bottom: 20px;
+			margin-bottom: 30px;
     }
-    div p {
+    @media (max-width: 767px) {
+    	body {
+    		padding: 0 5px;
+    	}
+			.container {
+				width: 95%;
+				padding: 0 5px 10px;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			p > a {
+				font-size: 12px;
+			}
+		}
+    .container p {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-    }
-    span:first-child {
-      flex: 10;
-    }
-    span:last-child {
-      flex: 1;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-bottom: 1px dashed #ccc;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      /* border: 1px solid red; */
+
     }
     a {
-      font-family: "微软雅黑";
       font-size: 14px;
       text-decoration: none;
       color: blue;
@@ -36,129 +64,128 @@
 </head>
 <body>
   <h2>百度前端技术学院任务列表</h2>
-  <div>
+  <div class="container">
     <h3>第一阶段任务</h3>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-1/">任务一：零基础HTML编码</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-1">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-1/">任务一：零基础HTML编码</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-1">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-2/">任务二：零基础HTML及CSS编码（一）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-2">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-2/">任务二：零基础HTML及CSS编码（一）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-2">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-3/">任务三：三栏式布局</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-3">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-3/">任务三：三栏式布局</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-3">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-4/">任务四：定位和居中问题</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-4">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-4/">任务四：定位和居中问题</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-4">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-5/">任务五：零基础HTML及CSS编码（二）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-5">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-5/">任务五：零基础HTML及CSS编码（二）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-5">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-6/">任务六：通过HTML及CSS模拟报纸排版</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-6">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-6/">任务六：通过HTML及CSS模拟报纸排版</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-6">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-10/">任务十：Flexbox 布局练习</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-10">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-7/">任务七：实现常见的技术产品官网的页面架构及样式布局</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-7">源码</a>
     </p>
-		
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-8/">任务八：响应式网格（栅格化）布局</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-8">源码</a>
+    </p>
+
+   <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-9/">任务九：使用HTML/CSS实现一个复杂页面</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-9">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-10/">任务十：Flexbox 布局练习</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-10">源码</a>
+    </p>
+
+     <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-11/">任务十一：移动Web页面布局实践</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-11">源码</a>
+    </p>
+
 		<p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task1-12/">任务十二：学习CSS 3的新特性</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-12">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task1-12/">任务十二：学习CSS 3的新特性</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task1-12">源码</a>
     </p>
 
   </div>
 
-  <div>
+
+  <div class="container">
     <h3>第二阶段任务</h3>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task2-13/">任务十三：零基础JavaScript编码（一）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-13">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-13/">任务十三：零基础JavaScript编码（一）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-13">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task2-14/">任务十四：零基础JavaScript编码（二）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-14">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-14/">任务十四：零基础JavaScript编码（二）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-14">源码</a>
     </p>
 
      <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task2-15/">任务十五：零基础JavaScript编码（三）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-15">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-15/">任务十五：零基础JavaScript编码（三）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-15">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task2-16/">任务十六：零基础JavaScript编码（四）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-16">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-16/">任务十六：零基础JavaScript编码（四）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-16">源码</a>
     </p>
 
     <p>
-      <span>
-        <a href="http://uniquexiaobai.github.io/ife-learning/Task2-18/">任务十八：基础JavaScript练习（一）</a>
-      </span>
-      <span>
-        <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-18">源码</a>
-      </span>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-17/">任务十七：零基础JavaScript编码（五）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-17">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-18/">任务十八：基础JavaScript练习（一）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-18">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-22/">任务二十二：JavaScript和树（一）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-22">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-23/">任务二十三：JavaScript和树（二）</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-23">源码</a>
+    </p>
+		
+		<p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-29/">任务二十九：表单（一）单个表单项的检验</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-29">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-30/">任务三十：表单（二）多个表单项的动态校验</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-30">源码</a>
+    </p>
+
+    <p>
+      <a href="http://uniquexiaobai.github.io/ife-learning/Task2-31/">任务三十一：表单（三）联动</a>
+      <a href="https://github.com/uniquexiaobai/ife-learning/tree/gh-pages/Task2-31">源码</a>
     </p>
 
   </div>

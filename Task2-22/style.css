@@ -1,0 +1,48 @@
+/* 定义按钮样式 */
+p {
+	width: 150px;
+	margin: 0 auto;
+}
+
+div {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: blue;
+	border-radius: 50%;
+}
+
+/* 根节点 */
+#root {
+	position: relative;
+	margin: 20px auto;
+}
+
+#root div {
+	top: 80px;
+}
+
+/* 第一层 */
+#root > :first-child {
+	right: 200px;
+}
+#root > :last-child {
+	left: 200px;
+}
+
+/* 第二层 */
+#root > div > :first-child {
+	right: 100px;
+}
+#root > div > :last-child {
+	left: 100px;
+}
+
+/* 第三层 */
+#root > div > div > :first-child {
+	right: 50px;
+}
+#root > div > div > :last-child {
+	left: 50px;
+}
+
